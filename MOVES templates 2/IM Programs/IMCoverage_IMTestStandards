@@ -1,0 +1,21 @@
+testStandardsID	testStandardsDesc
+24	ASM 2525 Final Cutpoints
+21	ASM 2525 Phase-in Cutpoints
+26	ASM 2525/5015 Final Cutpoints
+23	ASM 2525/5015 Phase-in Cutpoints
+25	ASM 5015 Final Cutpoints
+22	ASM 5015 Phase-in Cutpoints
+45	Evaporative Gas Cap and OBD Check
+44	Evaporative Gas Cap and Pressure Check
+41	Evaporative Gas Cap Check
+47	Evaporative Gas Cap, Pressure and OBD Check
+46	Evaporative Pressure and OBD Check
+43	Evaporative System OBD Check
+42	Evaporative System Pressure Check
+51	Exhaust OBD Check
+61	HDDV Engine Reflash Program
+33	IM240 Final Cutpoints
+31	IM240 Phase-in Cutpoints
+13	Loaded / Idle Test
+12	Two-mode, 2500 RPM/Idle Test
+11	Unloaded Idle Test

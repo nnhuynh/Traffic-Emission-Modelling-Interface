@@ -1,0 +1,9 @@
+polProcessID	processID	processName	pollutantID	pollutantName	isAffectedByExhaustIM	isAffectedByEvapIM
+101	1	Running Exhaust	1	Total Gaseous Hydrocarbons	Y	N
+102	2	Start Exhaust	1	Total Gaseous Hydrocarbons	Y	N
+112	12	Evap Fuel Vapor Venting	1	Total Gaseous Hydrocarbons	N	Y
+113	13	Evap Fuel Leaks	1	Total Gaseous Hydrocarbons	N	Y
+201	1	Running Exhaust	2	Carbon Monoxide (CO)	Y	N
+202	2	Start Exhaust	2	Carbon Monoxide (CO)	Y	N
+301	1	Running Exhaust	3	Oxides of Nitrogen (NOx)	Y	N
+302	2	Start Exhaust	3	Oxides of Nitrogen (NOx)	Y	N
