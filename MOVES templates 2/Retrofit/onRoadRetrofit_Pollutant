@@ -1,0 +1,203 @@
+pollutantID	pollutantName	NEIPollutantCode	shortName
+1	Total Gaseous Hydrocarbons	HC	Total Gas HC
+2	Carbon Monoxide (CO)	CO	CO
+3	Oxides of Nitrogen (NOx)	NOX	NOx
+5	Methane (CH4)	CH4	Methane (CH4)
+6	Nitrous Oxide (N2O)	N2O	N2O
+20	Benzene	71432	Benzene
+21	Ethanol		Ethanol
+22	MTBE	1634044	MTBE
+23	Naphthalene particle	91203	Naphthalene P
+24	1,3-Butadiene	106990	1,3-Butadiene
+25	Formaldehyde	50000	Formaldehyde
+26	Acetaldehyde	75070	Acetaldehyde
+27	Acrolein	107028	Acrolein
+30	Ammonia (NH3)	NH3	NH3
+31	Sulfur Dioxide (SO2)	SO2	SO2
+32	Nitrogen Oxide (NO)	NO	NO
+33	Nitrogen Dioxide (NO2)	NO2	NO2
+34	Nitrous Acid (HONO)	7782-77-6	HONO
+35	Nitrate (NO3)	PM25_PRI	PM2.5 NO3
+36	Ammonium (NH4)	PM25_PRI	PM2.5 NH4
+40	2,2,4-Trimethylpentane	540841	2,2,4-Trimethylpentane
+41	Ethyl Benzene	100414	Ethyl Benzene
+42	Hexane	110543	Hexane
+43	Propionaldehyde	123386	Propionaldehyde
+44	Styrene	100425	Styrene
+45	Toluene	108883	Toluene
+46	Xylene	1330207	Xylene
+51	Chloride	PM25_PRI	PM2.5 Cl
+52	Sodium	PM25_PRI	PM2.5 Na
+53	Potassium	PM25_PRI	PM2.5 K
+54	Magnesium	PM25_PRI	PM2.5 Mg
+55	Calcium	PM25_PRI	PM2.5 Ca
+56	Titanium	PM25_PRI	PM2.5 Ti
+57	Silicon	PM25_PRI	PM2.5 Si
+58	Aluminum	PM25_PRI	PM2.5 Al
+59	Iron	PM25_PRI	PM2.5 Fe
+60	Mercury Elemental Gaseous	200	Hg Egas
+61	Mercury Divalent Gaseous	201	Hg Dgas
+62	Mercury Particulate	202	Hg Part
+63	Arsenic Compounds	93	As
+65	Chromium 6+	18540299	Cr+6
+66	Manganese Compounds	7439965	Mn
+67	Nickel Compounds	7440020	Ni
+68	Dibenzo(a,h)anthracene particle	53703	Dibenzo(a,h)anthracene P
+69	Fluoranthene particle	206440	Fluoranthene P
+70	Acenaphthene particle	83329	Acenaphthene P
+71	Acenaphthylene particle	208968	Acenaphthylene P
+72	Anthracene particle	120127	Anthracene P
+73	Benz(a)anthracene particle	56553	Benz(a)anthracene P
+74	Benzo(a)pyrene particle	50328	Benzo(a)pyrene P
+75	Benzo(b)fluoranthene particle	205992	Benzo(b)fluoranthene P
+76	Benzo(g,h,i)perylene particle	191242	Benzo(g,h,i)perylene P
+77	Benzo(k)fluoranthene particle	207089	Benzo(k)fluoranthene P
+78	Chrysene particle	218019	Chrysene P
+79	Non-Methane Hydrocarbons	NMHC	NMHC
+80	Non-Methane Organic Gases	NMOG	NMOG
+81	Fluorene particle	86737	Fluorene P
+82	Indeno(1,2,3,c,d)pyrene particle	193395	Indeno(1,2,3,c,d)pyrene P
+83	Phenanthrene particle	85018	Phenanthrene P
+84	Pyrene particle	129000	Pyrene P
+86	Total Organic Gases	TOG	TOG
+87	Volatile Organic Compounds	VOC	VOC
+88	NonHAPTOG	NHTOG	NHTOG
+90	Atmospheric CO2	CO2	Atmospheric CO2
+91	Total Energy Consumption		Total Energy
+92	Petroleum Energy Consumption		Petrol Energy
+93	Fossil Fuel Energy Consumption		Fossil Energy
+98	CO2 Equivalent	CO2	CO2 Equivalent
+99	Brake Specific Fuel Consumption (BSFC)		BSFC
+100	Primary Exhaust PM10  - Total	PM10-PRI	PM10 Total Exh
+106	Primary PM10 - Brakewear Particulate	PM10_PRI	PM10 Brakewear
+107	Primary PM10 - Tirewear Particulate	PM10_PRI	PM10 Tirewear
+110	Primary Exhaust PM2.5 - Total	PM25-PRI	PM2.5 Total Exh
+111	Organic Carbon	PM25_PRI	PM2.5 OC
+112	Elemental Carbon	PM25_PRI	PM2.5 EC
+115	Sulfate Particulate	PM25_PRI	PM2.5 Sulfate
+116	Primary PM2.5 - Brakewear Particulate	PM25_PRI	PM2.5 Brakewear
+117	Primary PM2.5 - Tirewear Particulate	PM25_PRI	PM2.5 Tirewear
+118	Composite - NonECPM	PM25_PRI	PM2.5 NonECPM
+119	H2O (aerosol)	PM25_PRI	PM2.5 H2O Aero
+120	Primary PM2.5 - NonECNonSO4PM	PM25_PRI	PM2.5 NonECNonSO4
+121	CMAQ5.0 Unspeciated (PMOTHR)	PM25_PRI	PM2.5 PMOTHR
+122	Non-carbon Organic Matter (NCOM)	PM25_PRI	PM2.5 NCOM
+130	1,2,3,7,8,9-Hexachlorodibenzo-p-Dioxin	19408743	1,2,3,7,8,9-Hexachlorodibenzo-p-Dioxin
+131	Octachlorodibenzo-p-dioxin	3268879	Octachlorodibenzo-p-dioxin
+132	1,2,3,4,6,7,8-Heptachlorodibenzo-p-Dioxin	35822469	1,2,3,4,6,7,8-Heptachlorodibenzo-p-Dioxin
+133	Octachlorodibenzofuran	39001020	Octachlorodibenzofuran
+134	1,2,3,4,7,8-Hexachlorodibenzo-p-Dioxin	39227286	1,2,3,4,7,8-Hexachlorodibenzo-p-Dioxin
+135	1,2,3,7,8-Pentachlorodibenzo-p-Dioxin	40321764	1,2,3,7,8-Pentachlorodibenzo-p-Dioxin
+136	2,3,7,8-Tetrachlorodibenzofuran	51207319	2,3,7,8-Tetrachlorodibenzofuran
+137	1,2,3,4,7,8,9-Heptachlorodibenzofuran	55673897	1,2,3,4,7,8,9-Heptachlorodibenzofuran
+138	2,3,4,7,8-Pentachlorodibenzofuran	57117314	2,3,4,7,8-Pentachlorodibenzofuran
+139	1,2,3,7,8-Pentachlorodibenzofuran	57117416	1,2,3,7,8-Pentachlorodibenzofuran
+140	1,2,3,6,7,8-Hexachlorodibenzofuran	57117449	1,2,3,6,7,8-Hexachlorodibenzofuran
+141	1,2,3,6,7,8-Hexachlorodibenzo-p-Dioxin	57653857	1,2,3,6,7,8-Hexachlorodibenzo-p-Dioxin
+142	2,3,7,8-Tetrachlorodibenzo-p-Dioxin	1746016	2,3,7,8-Tetrachlorodibenzo-p-Dioxin
+143	2,3,4,6,7,8-Hexachlorodibenzofuran	60851345	2,3,4,6,7,8-Hexachlorodibenzofuran
+144	1,2,3,4,6,7,8-Heptachlorodibenzofuran	67562394	1,2,3,4,6,7,8-Heptachlorodibenzofuran
+145	1,2,3,4,7,8-Hexachlorodibenzofuran	70648269	1,2,3,4,7,8-Hexachlorodibenzofuran
+146	1,2,3,7,8,9-Hexachlorodibenzofuran	72918219	1,2,3,7,8,9-Hexachlorodibenzofuran
+168	Dibenzo(a,h)anthracene gas	53703	Dibenzo(a,h)anthracene G
+169	Fluoranthene gas	206440	Fluoranthene G
+170	Acenaphthene gas	83329	Acenaphthene G
+171	Acenaphthylene gas	208968	Acenaphthylene G
+172	Anthracene gas	120127	Anthracene G
+173	Benz(a)anthracene gas	56553	Benz(a)anthracene G
+174	Benzo(a)pyrene gas	50328	Benzo(a)pyrene G
+175	Benzo(b)fluoranthene gas	205992	Benzo(b)fluoranthene G
+176	Benzo(g,h,i)perylene gas	191242	Benzo(g,h,i)perylene G
+177	Benzo(k)fluoranthene gas	207089	Benzo(k)fluoranthene G
+178	Chrysene gas	218019	Chrysene G
+181	Fluorene gas	86737	Fluorene G
+182	Indeno(1,2,3,c,d)pyrene gas	193395	Indeno(1,2,3,c,d)pyrene G
+183	Phenanthrene gas	85018	Phenanthrene G
+184	Pyrene gas	129000	Pyrene G
+185	Naphthalene gas	91203	Naphthalene G
+1000	CB05 Mechanism		CB05 Mech
+1001	CB05_ALD2		CB05_ALD2
+1002	CB05_ALDX		CB05_ALDX
+1003	CB05_BENZENE		CB05_BENZENE
+1004	CB05_CH4		CB05_CH4
+1005	CB05_ETH		CB05_ETH
+1006	CB05_ETHA		CB05_ETHA
+1007	CB05_ETOH		CB05_ETOH
+1008	CB05_FORM		CB05_FORM
+1009	CB05_IOLE		CB05_IOLE
+1010	CB05_ISOP		CB05_ISOP
+1011	CB05_MEOH		CB05_MEOH
+1012	CB05_OLE		CB05_OLE
+1013	CB05_PAR		CB05_PAR
+1014	CB05_TERP		CB05_TERP
+1015	CB05_TOL		CB05_TOL
+1017	CB05_UNR		CB05_UNR
+1018	CB05_XYL		CB05_XYL
+1500	CB6CMAQ Mechanism		CB6CMAQ Mech
+1501	CB6CMAQ_ALD2		CB6CMAQ_ALD2
+1502	CB6CMAQ_ALDX		CB6CMAQ_ALDX
+1504	CB6CMAQ_CH4		CB6CMAQ_CH4
+1505	CB6CMAQ_ETH		CB6CMAQ_ETH
+1506	CB6CMAQ_ETHA		CB6CMAQ_ETHA
+1507	CB6CMAQ_ETOH		CB6CMAQ_ETOH
+1508	CB6CMAQ_FORM		CB6CMAQ_FORM
+1509	CB6CMAQ_IOLE		CB6CMAQ_IOLE
+1510	CB6CMAQ_ISOP		CB6CMAQ_ISOP
+1511	CB6CMAQ_MEOH		CB6CMAQ_MEOH
+1512	CB6CMAQ_OLE		CB6CMAQ_OLE
+1513	CB6CMAQ_PAR		CB6CMAQ_PAR
+1514	CB6CMAQ_TERP		CB6CMAQ_TERP
+1515	CB6CMAQ_TOL		CB6CMAQ_TOL
+1517	CB6CMAQ_UNR		CB6CMAQ_UNR
+1519	CB6CMAQ_ACET		CB6CMAQ_ACET
+1520	CB6CMAQ_BENZ		CB6CMAQ_BENZ
+1521	CB6CMAQ_ETHY		CB6CMAQ_ETHY
+1522	CB6CMAQ_KET		CB6CMAQ_KET
+1523	CB6CMAQ_PRPA		CB6CMAQ_PRPA
+1547	CB6CMAQ_NAPH		CB6CMAQ_NAPH
+1558	CB6CMAQ_SOAALK		CB6CMAQ_SOAALK
+1560	CB6CMAQ_XYLMN		CB6CMAQ_XYLMN
+2000	SAPRC07T Mechanism		SAPRC07T Mech
+2004	SAPRC07T_CH4		SAPRC07T_CH4
+2007	SAPRC07T_ETOH		SAPRC07T_ETOH
+2010	SAPRC07T_ISOP		SAPRC07T_ISOP
+2011	SAPRC07T_MEOH		SAPRC07T_MEOH
+2014	SAPRC07T_TERP		SAPRC07T_TERP
+2016	SAPRC07T_UNK		SAPRC07T_UNK
+2019	SAPRC07T_ACET		SAPRC07T_ACET
+2020	SAPRC07T_BENZ		SAPRC07T_BENZ
+2024	SAPRC07T_ACRO		SAPRC07T_ACRO
+2025	SAPRC07T_ACYE		SAPRC07T_ACYE
+2026	SAPRC07T_ALK1		SAPRC07T_ALK1
+2027	SAPRC07T_ALK2		SAPRC07T_ALK2
+2028	SAPRC07T_ALK3		SAPRC07T_ALK3
+2029	SAPRC07T_ALK4		SAPRC07T_ALK4
+2030	SAPRC07T_ALK5		SAPRC07T_ALK5
+2031	SAPRC07T_APIN		SAPRC07T_APIN
+2032	SAPRC07T_ARO1		SAPRC07T_ARO1
+2033	SAPRC07T_ARO2MN		SAPRC07T_ARO2MN
+2034	SAPRC07T_B124		SAPRC07T_B124
+2035	SAPRC07T_BALD		SAPRC07T_BALD
+2036	SAPRC07T_BDE13		SAPRC07T_BDE13
+2037	SAPRC07T_CCHO		SAPRC07T_CCHO
+2038	SAPRC07T_CRES		SAPRC07T_CRES
+2039	SAPRC07T_ETHE		SAPRC07T_ETHE
+2040	SAPRC07T_GLY		SAPRC07T_GLY
+2041	SAPRC07T_HCHO		SAPRC07T_HCHO
+2042	SAPRC07T_IPRD		SAPRC07T_IPRD
+2043	SAPRC07T_MACR		SAPRC07T_MACR
+2044	SAPRC07T_MEK		SAPRC07T_MEK
+2045	SAPRC07T_MVK		SAPRC07T_MVK
+2046	SAPRC07T_MXYL		SAPRC07T_MXYL
+2048	SAPRC07T_NAPHTH		SAPRC07T_NAPHTH
+2049	SAPRC07T_NROG		SAPRC07T_NROG
+2050	SAPRC07T_OLE1		SAPRC07T_OLE1
+2051	SAPRC07T_OLE2		SAPRC07T_OLE2
+2052	SAPRC07T_OXYL		SAPRC07T_OXYL
+2053	SAPRC07T_PACD		SAPRC07T_PACD
+2054	SAPRC07T_PRD2		SAPRC07T_PRD2
+2055	SAPRC07T_PRPE		SAPRC07T_PRPE
+2056	SAPRC07T_PXYL		SAPRC07T_PXYL
+2057	SAPRC07T_RCHO		SAPRC07T_RCHO
+2058	SAPRC07T_SOAALK		SAPRC07T_SOAALK
+2059	SAPRC07T_TOLU		SAPRC07T_TOLU

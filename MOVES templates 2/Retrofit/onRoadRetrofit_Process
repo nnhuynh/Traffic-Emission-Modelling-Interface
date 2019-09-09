@@ -1,0 +1,25 @@
+processID	processName	SCCProcID
+1	Running Exhaust	X
+2	Start Exhaust	X
+9	Brakewear	B
+10	Tirewear	T
+11	Evap Permeation	V
+12	Evap Fuel Vapor Venting	V
+13	Evap Fuel Leaks	V
+15	Crankcase Running Exhaust	X
+16	Crankcase Start Exhaust	X
+17	Crankcase Extended Idle Exhaust	X
+18	Refueling Displacement Vapor Loss	V
+19	Refueling Spillage Loss	V
+20	Evap Tank Permeation	V
+21	Evap Hose Permeation	V
+22	Evap RecMar Neck Hose Permeation	V
+23	Evap RecMar Supply/Ret Hose Permeation	V
+24	Evap RecMar Vent Hose Permeation	V
+30	Diurnal Fuel Vapor Venting	V
+31	HotSoak Fuel Vapor Venting	V
+32	RunningLoss Fuel Vapor Venting	V
+40	Nonroad	
+90	Extended Idle Exhaust	X
+91	Auxiliary Power Exhaust	X
+99	Well-to-Pump	

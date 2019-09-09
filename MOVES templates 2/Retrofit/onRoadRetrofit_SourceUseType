@@ -1,0 +1,9 @@
+sourceTypeID	sourceTypeName	HPMSVtypeID	HPMSVtypeName
+11	Motorcycle	10	Motorcycles
+21	Passenger Car	25	Light Duty Vehicles
+31	Passenger Truck	25	Light Duty Vehicles
+32	Light Commercial Truck	25	Light Duty Vehicles
+41	Intercity Bus	40	Buses
+42	Transit Bus	40	Buses
+43	School Bus	40	Buses
+54	Motor Home	50	Single Unit Trucks

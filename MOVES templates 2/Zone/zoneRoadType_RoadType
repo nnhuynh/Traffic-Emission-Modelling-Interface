@@ -1,0 +1,6 @@
+roadTypeID	roadDesc
+1	Off-Network
+2	Rural Restricted Access
+3	Rural Unrestricted Access
+4	Urban Restricted Access
+5	Urban Unrestricted Access
