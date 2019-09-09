@@ -1,0 +1,16 @@
+fuelTypeID	fuelTypeDesc	fuelSubtypeID	fuelSubtypeDesc	fuelSubtypePetroleumFraction	fuelSubtypeFossilFraction	carbonContent	oxidationFraction	humidityCorrectionCoeff	energyContent	fuelDensity
+1	Gasoline	10	Conventional Gasoline	0.95	1.0	0.0196	1.0	0.0038	43.488	2839.0
+1	Gasoline	11	Reformulated Gasoline (RFG)	0.95	1.0	0.0196	1.0	0.0038	42.358	2839.0
+1	Gasoline	12	Gasohol (E10)	0.94	0.94	0.0196	1.0	0.0038	41.762	2839.0
+1	Gasoline	13	Gasohol (E8)	0.945	1.0	0.0196	1.0	0.0038	42.1	2839.0
+1	Gasoline	14	Gasohol (E5)	0.945	1.0	0.0196	1.0	0.0038	42.605	2839.0
+1	Gasoline	15	Gasohol (E15)	0.94	0.94	0.0196	1.0	0.0038	40.92	2839.0
+1	Gasoline	18	Ethanol (E20)	0.9	0.9	0.0194	1.0	0.0038	40.077	2839.0
+2	Diesel Fuel	20	Conventional Diesel Fuel	1.0	1.0	0.0201904	1.0	0.0026	43.717	3167.0
+2	Diesel Fuel	21	Biodiesel (BD20)	0.81	0.81	0.0200894	1.0	0.0026	43.061	3167.0
+2	Diesel Fuel	22	Fischer-Tropsch Diesel (FTD100)	0.0	1.0	0.0206952	1.0	0.0026	43.247	3167.0
+3	Compressed Natural Gas (CNG)	30	Compressed Natural Gas (CNG)	0.0	1.0	0.0161	1.0	0.0	48.632	0.0
+5	Ethanol (E-85)	50	Ethanol	0.26	0.26	0.0194	1.0	0.0038	26.592	2944.0
+5	Ethanol (E-85)	51	Ethanol (E85)	0.26	0.26	0.0194	1.0	0.0038	29.12	2944.0
+5	Ethanol (E-85)	52	Ethanol (E70)	0.46	0.46	0.0194	1.0	0.0038	31.649	2944.0
+9	Electricity	90	Electricity	0.02	0.87	0.0	0.0	0.0	0.0	0.0

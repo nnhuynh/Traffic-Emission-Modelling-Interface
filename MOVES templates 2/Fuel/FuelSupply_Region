@@ -1,0 +1,2 @@
+regionID	VV	WW	XX	YY	ZZ	description
+100000000	1	0	0	0	0	VVWWXXYYZZ - VV=fuelPADD, WW=max summer RVP x.y,  XX=00 1 psi waiver, 01 no waiver, YY=min ethanol vol%, ZZ=reserved

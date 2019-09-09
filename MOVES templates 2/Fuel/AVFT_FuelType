@@ -1,0 +1,6 @@
+fuelTypeID	fuelTypeDesc	humidityCorrectionCoeff	fuelDensity
+1	Gasoline	0.0038	2839.0
+2	Diesel Fuel	0.0026	3167.0
+3	Compressed Natural Gas (CNG)	0.0	0.0
+5	Ethanol (E-85)	0.0038	2944.0
+9	Electricity	0.0	0.0
