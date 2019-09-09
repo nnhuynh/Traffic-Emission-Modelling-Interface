@@ -1,0 +1,48 @@
+Output Database Server Name: [using default]
+
+Output Database Name: wol_out
+Time Spans:
+	Aggregate By: Hour
+	Years:
+		2019
+
+	Months:
+		July
+	Days:
+		Weekdays
+	Hours:
+		Begin Hour: 06:00 - 06:59
+		End Hour: 06:00 - 06:59
+
+Geographic Bounds:
+	LINK geography
+	Selection: ALABAMA - Autauga County
+
+On Road Vehicle Equipment:
+	Diesel Fuel - Intercity Bus
+	Diesel Fuel - Light Commercial Truck
+	Diesel Fuel - Motor Home
+	Diesel Fuel - Passenger Car
+	Diesel Fuel - Passenger Truck
+	Diesel Fuel - School Bus
+	Diesel Fuel - Transit Bus
+	Gasoline - Light Commercial Truck
+	Gasoline - Motor Home
+	Gasoline - Motorcycle
+	Gasoline - Passenger Car
+	Gasoline - Passenger Truck
+	Gasoline - School Bus
+	Gasoline - Transit Bus
+
+Road Types:
+	Urban Restricted Access
+	Urban Unrestricted Access
+Separate ramp rates: false
+
+Pollutants And Processes:
+
+Rate of Progress:
+	Rate of Progress calculations are disabled
+
+Manage Input Data Sets:
+
