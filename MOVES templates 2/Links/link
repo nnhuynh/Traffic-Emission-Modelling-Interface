@@ -1,0 +1,3 @@
+linkID	countyID	zoneID	roadTypeID	linkLength	linkVolume	linkAvgSpeed	linkDescription	linkAvgGrade
+		1001	10010	4					
+		1001	10010	5					
