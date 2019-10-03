@@ -42,7 +42,9 @@ def readAgeDistribData(ageDistribFile, firstLineYrUnknown=True):
             dfAgeDisRaw[col] = dfAgeDisRaw[col] + prorate(valYrUnknown,dfAgeDisRaw[col])
             dfAgeDisRaw[col] = dfAgeDisRaw[col].apply(round)
 
-
+    # adds values in column 'Light Trailers' into Scooters using user input factor in const.userInputs.lightTrailerScooterFactor
+    dfAgeDisRaw[const.rmsVehTypes.scooters.value] += const.userInputs.lightTrailerScooterFactor.value * \
+                                                     dfAgeDisRaw[const.rmsVehTypes.lightTrailers.value]
     dfAgeDisMOVES = groupAgeDisByMovesTypes(dfAgeDisRaw)
     dfAgeFrac = calAgeDistribFrac(dfAgeDisMOVES)
 

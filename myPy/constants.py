@@ -8,12 +8,19 @@ class userInputs(Enum):
     monthID = 7
     yearID = 2019
     zoneID = 203100
+    lightTrailerScooterFactor = .1 # i.e. 1 light trailer is equivalent to .1 scooter (in RMS data)
+    fuelRegionID = 100000000
+    countyID = 1091
+    fuelYearID = 2019
+    modelYearGroupID = 0
 
 
 class mySQL(Enum):
     host = '127.0.0.1'
     user = 'root'
     passwd = 'password'
+
+
 
 aimsunVehTrajecDataFreq = 0.8 #seconds
 defaultRoadTypeID = 5 # residential?
@@ -22,6 +29,7 @@ aimsunMovesSources = {53: 21,
                      56: 32,
                      58: 42,
                      62: 21}
+
 
 class aimsunCols(Enum):
     col_did = 'did'
@@ -93,29 +101,53 @@ class MovesFuelTypes(Enum):
                                  rmsFuelTypes.kerosene.value,
                                  rmsFuelTypes.petrolKerosene.value,
                                  rmsFuelTypes.steamOilPwred.value,
-                                 rmsFuelTypes.steamPetrolPwred.value,
-                                 ]}
+                                 rmsFuelTypes.steamPetrolPwred.value],
+                'engTechID': 1}
     diesel = {'desc': 'Diesel Fuel', 'fuelTypeID': 2,
               'rmsFuelTypes': [rmsFuelTypes.diesel.value,
                                rmsFuelTypes.dieselLPG.value,
                                rmsFuelTypes.dieselLPT.value,
                                rmsFuelTypes.dieselNAT.value,
                                rmsFuelTypes.steamDieselPwred.value,
-                               rmsFuelTypes.steamCoalPwred.value]}
+                               rmsFuelTypes.steamCoalPwred.value],
+              'engTechID': 1}
     cng = {'desc': 'Compressed Natural Gas(CNG)', 'fuelTypeID': 3,
            'rmsFuelTypes': [rmsFuelTypes.cng.value,
                             rmsFuelTypes.lng.value,
-                            rmsFuelTypes.hydrogen.value]}
+                            rmsFuelTypes.hydrogen.value],
+           'engTechID': 1}
     ethanol = {'desc': 'Ethanol(E - 85)', 'fuelTypeID': 5,
-               'rmsFuelTypes': []}
+               'rmsFuelTypes': [],
+               'engTechID': 1}
     electricity = {'desc': 'Electricity', 'fuelTypeID': 9,
-                   'rmsFuelTypes': [rmsFuelTypes.electricity.value]}
+                   'rmsFuelTypes': [rmsFuelTypes.electricity.value],
+                   'engTechID': 30}
 
     def getRMSFuelTypes(self):
         return self.value['rmsFuelTypes']
 
+    def getFuelID(self):
+        return self.value['fuelTypeID']
+
     def getFuelDesc(self):
         return self.value['desc']
+
+    def getEngTechID(self):
+        return self.value['engTechID']
+
+    @classmethod
+    def getFuelbyDesc(cls,desc):
+        for fuel in cls:
+            if fuel.getFuelDesc()==desc:
+                return fuel
+        return None
+
+    @classmethod
+    def getAllFuelDesc(cls):
+        fuelDesc = []
+        for fuel in cls:
+            fuelDesc.append(fuel.getFuelDesc())
+        return fuelDesc
 
 class rmsVehTypes(Enum):
     passengerVehicles = 'Passenger Vehicles'
@@ -179,6 +211,32 @@ class MovesSourceTypes(Enum):
             if sourceDesc==source.getDesc():
                 return source
         return None
+
+
+class APSFuelTypes(Enum):
+    ron95_97 = {'desc': '95-97 RON', 'fuelSubTypeID': 10, 'FuelFormulationID': 10, 'fuelTypeID': 1}
+    ronOver98 = {'desc': '98+ RON', 'fuelSubTypeID': 10, 'FuelFormulationID': 10, 'fuelTypeID': 1}
+    ronUnder95 = {'desc': '<95 RON', 'fuelSubTypeID': 10, 'FuelFormulationID': 10, 'fuelTypeID': 1}
+    e10 = {'desc': 'Ethanol-blended fuel', 'fuelSubTypeID': 12, 'FuelFormulationID': 1002, 'fuelTypeID': 1}
+    diesel = {'desc': 'Diesel oil', 'fuelSubTypeID': 20, 'FuelFormulationID': 20, 'fuelTypeID': 2}
+
+    def getDesc(self):
+        return self.value['desc']
+
+    def getFuelTypeID(self):
+        return self.value['fuelTypeID']
+
+    @classmethod
+    def getDescSameFuelTypeID(cls):
+        descTypeID = {}
+        for type in cls:
+            if type.getFuelTypeID() not in descTypeID:
+                descTypeID[type.getFuelTypeID()] = [type.getDesc()]
+            else:
+                descThisType = descTypeID[type.getFuelTypeID()]
+                descThisType.append(type.getDesc())
+                descTypeID[type.getFuelTypeID()] = descThisType
+        return descTypeID
 
 
 class sourceTypeAgeDistribution(Enum):
@@ -265,3 +323,107 @@ class opModeDistribution(Enum):
                          "KEY polProcessID (polProcessID)," \
                          "KEY opModeID (opModeID)" \
                          ") ENGINE=MyISAM DEFAULT CHARSET=latin1"
+
+class avft(Enum):
+    tablename = 'avft'
+    col_sourceTypeID = ['sourceTypeID']
+    col_modelYearID = ['modelYearID']
+    col_fuelTypeID = ['fuelTypeID']
+    col_engTechID = ['engTechID']
+    col_fuelEngFraction = ['fuelEngFraction']
+    createTableQuery = "CREATE TABLE avft (" \
+           "sourceTypeID smallint(6) NOT NULL," \
+           "modelYearID smallint(6) NOT NULL," \
+           "fuelTypeID smallint(6) NOT NULL," \
+           "engTechID smallint(6) NOT NULL," \
+           "fuelEngFraction double NOT NULL," \
+           "PRIMARY KEY (sourceTypeID,modelYearID,fuelTypeID,engTechID)," \
+           "KEY sourceTypeID (sourceTypeID)," \
+           "KEY modelYearID (modelYearID)," \
+           "KEY fuelTypeID (fuelTypeID)," \
+           "KEY engTechID (engTechID)" \
+           ") ENGINE=MyISAM DEFAULT CHARSET=latin1"
+
+class FuelFormulation(Enum):
+    tablename = 'fuelformulation'
+    col_fuelFormulationID = ['fuelFormulationID']
+    col_fuelSubtypeID = ['fuelSubtypeID']
+    col_RVP = ['RVP']
+    col_sulfurLevel = ['sulfurLevel']
+    col_ETOHVolume = ['ETOHVolume']
+    col_MTBEVolume = ['MTBEVolume']
+    col_ETBEVolume = ['ETBEVolume']
+    col_TAMEVolume = ['TAMEVolume']
+    col_aromaticContent = ['aromaticContent']
+    col_olefinContent = ['olefinContent']
+    col_benzeneContent = ['benzeneContent']
+    col_e200 = ['e200']
+    col_e300 = ['e300']
+    col_volToWtPercentOxy = ['volToWtPercentOxy']
+    col_BioDieselEsterVolume = ['BioDieselEsterVolume']
+    col_CetaneIndex = ['CetaneIndex']
+    col_PAHContent = ['PAHContent']
+    col_T50 = ['T50']
+    col_T90 = ['T90']
+    createTableQuery = "CREATE TABLE fuelformulation (" \
+                      "fuelFormulationID smallint(6) NOT NULL DEFAULT '0'," \
+                      "fuelSubtypeID smallint(6) NOT NULL DEFAULT '0'," \
+                      "RVP float DEFAULT NULL," \
+                      "sulfurLevel float NOT NULL DEFAULT '30'," \
+                      "ETOHVolume float DEFAULT NULL," \
+                      "MTBEVolume float DEFAULT NULL," \
+                      "ETBEVolume float DEFAULT NULL," \
+                      "TAMEVolume float DEFAULT NULL," \
+                      "aromaticContent float DEFAULT NULL," \
+                      "olefinContent float DEFAULT NULL," \
+                      "benzeneContent float DEFAULT NULL," \
+                      "e200 float DEFAULT NULL," \
+                      "e300 float DEFAULT NULL," \
+                      "volToWtPercentOxy float DEFAULT NULL," \
+                      "BioDieselEsterVolume float DEFAULT NULL," \
+                      "CetaneIndex float DEFAULT NULL," \
+                      "PAHContent float DEFAULT NULL," \
+                      "T50 float DEFAULT NULL," \
+                      "T90 float DEFAULT NULL," \
+                      "PRIMARY KEY (fuelFormulationID)" \
+                      ") ENGINE=MyISAM DEFAULT CHARSET=latin1"
+
+class FuelSupply(Enum):
+    tablename = 'fuelsupply'
+    col_fuelRegionID = ['fuelRegionID']
+    col_fuelYearID = ['fuelYearID']
+    col_monthGroupID = ['monthGroupID']
+    col_fuelFormulationID = ['fuelFormulationID']
+    col_marketShare = ['marketShare']
+    col_marketShareCV = ['marketShareCV']
+    createTableQuery = "CREATE TABLE fuelsupply (" \
+                 "fuelRegionID int(11) NOT NULL DEFAULT '0'," \
+                 "fuelYearID smallint(6) NOT NULL DEFAULT '0'," \
+                 "monthGroupID smallint(6) NOT NULL DEFAULT '0'," \
+                 "fuelFormulationID smallint(6) NOT NULL DEFAULT '0'," \
+                 "marketShare float DEFAULT NULL," \
+                 "marketShareCV float DEFAULT NULL," \
+                 "PRIMARY KEY (fuelRegionID,fuelFormulationID,monthGroupID,fuelYearID)," \
+                 "KEY fuelRegionID (fuelRegionID)," \
+                 "KEY yearID (fuelYearID)," \
+                 "KEY monthGroupID (monthGroupID)," \
+                 "KEY fuelSubtypeID (fuelFormulationID)" \
+                 ") ENGINE=MyISAM DEFAULT CHARSET=latin1"
+
+class FuelUsageFraction(Enum):
+    tablename = 'fuelusagefraction'
+    col_countyID = ['countyID']
+    col_fuelYearID = ['fuelYearID']
+    col_modelYearGroupID = ['modelYearGroupID']
+    col_sourceBinFuelTypeID = ['sourceBinFuelTypeID']
+    col_fuelSupplyFuelTypeID = ['fuelSupplyFuelTypeID']
+    col_usageFraction = ['usageFraction']
+    createTableQuery = "CREATE TABLE fuelusagefraction (" \
+                        "countyID int(11) NOT NULL," \
+                        "fuelYearID int(11) NOT NULL," \
+                        "modelYearGroupID int(11) NOT NULL," \
+                        "sourceBinFuelTypeID smallint(6) NOT NULL," \
+                        "fuelSupplyFuelTypeID smallint(6) NOT NULL," \
+                        "usageFraction double DEFAULT NULL," \
+                        "PRIMARY KEY (countyID,fuelYearID,modelYearGroupID,sourceBinFuelTypeID,fuelSupplyFuelTypeID)" \
+                        ") ENGINE=MyISAM DEFAULT CHARSET=latin1"
