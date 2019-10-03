@@ -1,0 +1,21 @@
+fuelType,Motorcycle,Passenger Car,Passenger Truck,Light Commercial Truck,Transit Bus,Single Unit Short-haul Truck,Motor Home,Combination Short-haul Truck
+Unleaded Petrol,326137,2686974,969102,204458,57418,523,6315,53
+Petrol,9012,35824,1715,10081,1039,545,442,31
+LPG,1,9023,856,7879,91,33,13,31
+Electric Petrol,380,30988,3266,872,21,71,1,0
+Electricity,330,1901,16,52,8,14,0,3
+Petrol And LPG (Dual Fuel),35,10827,10700,9275,659,77,110,33
+Diesel,67,178802,463001,517361,34456,125264,6983,3158
+Diesel And LPG (Dual Fuel),0,45,420,222,6,26,8,2
+Diesel  LPT (Torque Topping),2,66,84,231,44,376,6,92
+Diesel NAT,0,127,316,308,30,4,4,1
+Compressed Natural Gas,0,3,0,0,452,15,0,1
+Petrol  Compressed Natural Gas,25,118,77,74,6,5,6,0
+Liquid Natural Gas,0,1,5,3,0,3,0,0
+Hydrogen,0,39,13,10,0,0,0,1
+Kerosene,0,1,0,0,0,0,0,0
+Petrol  Kerosene (Dual Fuel),0,4,1,2,0,0,0,0
+Steam (Fuel Oil Powered),17,100,33,22,7,8,2,1
+Steam (Petrol Powered),0,1,0,0,0,0,0,0
+Steam (Diesel Powered),0,2,2,0,0,0,0,0
+Steam (Coal Burning Powered),0,0,0,0,0,0,0,1

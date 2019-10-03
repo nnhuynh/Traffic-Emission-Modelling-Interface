@@ -1,0 +1,23 @@
+fuelType,Passenger Vehicles,Off-road Vehicles,People movers,Small Buses,Mobile Homes,Motor cycles,Scooters,Light Trucks,Light Plants,Light Trailers,Other Vehicles,Buses,Heavy Trucks,Prime Movers,Heavy Plants,Heavy Trailers
+Unleaded Petrol,2677264,967828,49825,7287,6254,220560,104105.80418728587,203718,108,0,119,176,469,50,52,0
+Petrol,35695,1713,717,317,438,6217,2754.0353254663114,9999,51,0,23,3,537,4,30,0
+LPG,8990,855,19,42,13,1,0.0,7810,45,0,1,30,33,0,30,0
+Electric Petrol,30876,3262,20,1,1,321,57.205481537875905,869,0,0,0,0,70,0,0,0
+Electricity,1894,16,0,0,0,279,49.033269889607915,39,13,0,2,8,12,2,3,0
+Petrol And LPG (Dual Fuel),10788,10686,255,401,109,18,16.34442329653597,9179,67,0,4,2,69,7,32,0
+Diesel,178156,462392,10694,10338,6916,50,16.34442329653597,514800,962,0,4,13346,102051,22304,3073,0
+Diesel And LPG (Dual Fuel),45,419,0,6,8,0,0.0,220,1,0,0,0,19,7,2,0
+Diesel  LPT (Torque Topping),66,84,2,9,6,2,0.0,202,28,0,0,33,312,61,90,0
+Diesel NAT,127,316,7,17,4,0,0.0,307,0,0,0,6,4,0,1,0
+Compressed Natural Gas,3,0,0,0,0,0,0.0,0,0,0,0,451,15,0,1,0
+Petrol  Compressed Natural Gas,118,77,4,2,6,25,0.0,72,2,0,0,0,5,0,0,0
+Liquid Natural Gas,1,5,0,0,0,0,0.0,3,0,0,0,0,3,0,0,0
+Hydrogen,39,13,0,0,0,0,0.0,10,0,0,0,0,0,0,1,0
+Kerosene,1,0,0,0,0,0,0.0,0,0,0,0,0,0,0,0,0
+Petrol  Kerosene (Dual Fuel),4,1,0,0,0,0,0.0,2,0,0,0,0,0,0,0,0
+Steam (Fuel Oil Powered),100,33,5,1,2,1,16.34442329653597,22,0,0,0,1,7,1,1,0
+Steam (Petrol Powered),1,0,0,0,0,0,0.0,0,0,0,0,0,0,0,0,0
+Steam (Diesel Powered),2,2,0,0,0,0,0.0,0,0,0,0,0,0,0,0,0
+Steam (Coal Burning Powered),0,0,0,0,0,0,0.0,0,0,0,0,0,0,0,1,0
+Unknown,10678,1906,44,80,134,1189,326.88846593071946,2269,51,0,5,90,789,75,46,0
+No engine,0,0,0,0,0,0,0.0,0,0,942075,0,0,57,0,46,50081
