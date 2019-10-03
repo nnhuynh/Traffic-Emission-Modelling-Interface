@@ -68,8 +68,8 @@ def initDB(hostname, username, password, newDBname):
     mkTableCommands.append(const.FuelFormulation.createTableQuery.value)
     mkTableCommands.append(const.FuelSupply.createTableQuery.value)
     mkTableCommands.append(const.FuelUsageFraction.createTableQuery.value)
-    #for table in sqlCommands.Tables:
-    #    mkTableCommands.append(table.value)
+    for table in sqlCommands.Tables:
+        mkTableCommands.append(table.value)
     execSQLs(hostname, username, password, newDBname, mkTableCommands)
 
 #=======================================================================================================================
@@ -265,10 +265,7 @@ def insertData_FuelUsageFrac(hostname, username, password, dbname, dfData):
         sqlQueries.append(sqlQuery)
     execSQLs(hostname, username, password, dbname, sqlQueries)
 
-
-
-
-
+#=======================================================================================================================
 def execSQLs2(hostname, username, password, dbname, tablename, createTblSQL, sqlCommands):
     try:
         mydb = mysql.connector.connect(host=hostname, user=username, passwd=password, database=dbname)

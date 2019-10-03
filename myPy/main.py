@@ -12,7 +12,7 @@ import fuelUsageFractionHandler as fuelUsageFrac
 import pandas as pd
 
 if __name__=='__main__':
-    
+
     dbHandler.initDB(const.mySQL.host.value, const.mySQL.user.value, 
                     const.mySQL.passwd.value, const.userInputs.newDB_in.value)
     print('finish initDB')
@@ -69,17 +69,17 @@ if __name__=='__main__':
     print('finish insertData_FuelFormulation')
 
 
-
     dfFuelSupply = fuelSupply.prepareFuelSupply('../data/fuelSalesNSWJul2019_APS.csv')
     #dfFuelSupply.to_csv('./tempOutputs/dfFuelSupply.csv', index=False)
     dbHandler.insertData_FuelSupply(const.mySQL.host.value, const.mySQL.user.value,
                                     const.mySQL.passwd.value, const.userInputs.newDB_in.value,
                                     dfFuelSupply)
-
+    print('finish insertData_FuelSupply')
 
     dfUsageFrac = fuelUsageFrac.prepareFuelUsageFrac()
     #dfUsageFrac.to_csv('./tempOutputs/dfUsageFrac.csv', index=False)
     dbHandler.insertData_FuelUsageFrac(const.mySQL.host.value, const.mySQL.user.value,
                                     const.mySQL.passwd.value, const.userInputs.newDB_in.value, dfUsageFrac)
+    print('finish insertData_FuelUsageFrac')
 
     print('yay')

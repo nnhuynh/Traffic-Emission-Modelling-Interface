@@ -13,7 +13,6 @@ def prepareFuelSupply(fuelSalesFile, fuelRegionID=const.userInputs.fuelRegionID.
     fuelSupply.append([fuelRegionID, fuelYearID, monthGroupID, 10, float(ronSum/petrolSum), 0.5])
     fuelSupply.append([fuelRegionID, fuelYearID, monthGroupID, 1002, float(ethanolSum/petrolSum), 0.5])
     fuelSupply.append([fuelRegionID, fuelYearID, monthGroupID, 20, float(dieselSum/dieselSum), 0.5])
-    print(fuelSupply)
 
     dfFuelSupply = pd.DataFrame(data=fuelSupply, columns=[const.FuelSupply.col_fuelRegionID.value[0],
                                                           const.FuelSupply.col_fuelYearID.value[0],
